@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizMaster - Test Your Knowledge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz-container">
+
+        <!-- Header -->
+        <header class="top-header">
+            <div class="logo">QuizMaster</div>
+
+            <button id="theme-btn" class="theme-btn">
+                🌙 Dark Mode
+            </button>
+        </header>
+
+
+        <!-- START SCREEN -->
+        <section id="start-screen" class="screen">
+
+            <div class="welcome-icon">🧠</div>
+
+            <h1>Test Your Knowledge!</h1>
+
+            <p class="subtitle">
+                Challenge yourself with our general knowledge quiz.
+            </p>
+
+            <div class="quiz-info">
+
+                <div class="info-box">
+                    <span>10</span>
+                    <small>Questions</small>
+                </div>
+
+                <div class="info-box">
+                    <span>4</span>
+                    <small>Options</small>
+                </div>
+
+                <div class="info-box">
+                    <span>100%</span>
+                    <small>Focus</small>
+                </div>
+
+            </div>
+
+            <p id="best-score">Best Score: 0/10</p>
+
+            <button id="start-btn" class="primary-btn">
+                Start Quiz →
+            </button>
+
+        </section>
+
+
+        <!-- QUIZ SCREEN -->
+        <section id="quiz-screen" class="screen hidden">
+
+            <div class="quiz-header">
+
+                <span id="question-counter">
+                    Question 1 of 10
+                </span>
+
+                <span id="score-display">
+                    Score: 0
+                </span>
+
+            </div>
+
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+
+                <div id="progress-bar"></div>
+
+            </div>
+
+
+            <!-- Question -->
+            <h2 id="question-text"></h2>
+
+
+            <!-- Options -->
+            <div id="options-container"></div>
+
+
+            <!-- Feedback -->
+            <p id="feedback"></p>
+
+
+            <!-- Navigation -->
+            <div class="navigation">
+
+                <button id="prev-btn" class="secondary-btn">
+                    ← Previous
+                </button>
+
+                <button id="next-btn" class="primary-btn" disabled>
+                    Next →
+                </button>
+
+            </div>
+
+            <p class="keyboard-hint">
+                Keyboard: 1–4 to select | Enter to continue
+            </p>
+
+        </section>
+
+
+        <!-- RESULT SCREEN -->
+        <section id="result-screen" class="screen hidden">
+
+            <div class="result-icon">🏆</div>
+
+            <h1>Quiz Completed!</h1>
+
+            <h2 id="final-score">0/10</h2>
+
+            <p id="percentage"></p>
+
+            <p id="result-message"></p>
+
+            <div id="review-container"></div>
+
+            <button id="restart-btn" class="primary-btn">
+                ↻ Play Again
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
