@@ -33,3 +33,20 @@ button {
 button:hover {
     background-color: blue;
 }
+
+
+nav {
+    text-align: center;
+    background-color: navy;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: yellow;
+}
